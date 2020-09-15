@@ -3,12 +3,13 @@ package ru.x5.StudentTask;
 public class Aspirant extends Student {
     private String study;
 
-    public Aspirant(String firstName, String lastName, String group, double averegeMark) {
-        super(firstName, lastName, group, averegeMark);
+    public Aspirant(String firstName, String lastName, String group, double averageMark, String study) {
+        super(firstName, lastName, group, averageMark);
+        this.study = study;
     }
 
     public int getScholarship() {
-        if (averegeMark == 5) {
+        if (averageMark == 5) {
             return 200;
         } else {
             return 180;

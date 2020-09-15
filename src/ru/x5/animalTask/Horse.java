@@ -1,11 +1,14 @@
 package ru.x5.animalTask;
 
 public class Horse extends Animal {
-    int horsePower;
+    private int horsePower;
+
+    public int getHorsePower() {
+        return horsePower;
+    }
 
     public Horse(String food, String loaction, int horsePower) {
-        this.food = food;
-        this.location = loaction;
+        super(food, loaction);
         this.horsePower = horsePower;
     }
 

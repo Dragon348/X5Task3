@@ -1,11 +1,14 @@
 package ru.x5.animalTask;
 
 public class Dog extends Animal {
-    String barkType;
+    private String barkType;
 
-    public Dog(String food, String loaction, String barkType) {
-        this.food = food;
-        this.location = loaction;
+    public String getBarkType() {
+        return barkType;
+    }
+
+    public Dog(String food, String location, String barkType) {
+        super(food, location);
         this.barkType = barkType;
     }
 

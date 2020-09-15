@@ -1,11 +1,10 @@
 package ru.x5.animalTask;
 
 public class Cat extends Animal {
-    boolean isWild;
+    private boolean isWild;
 
-    public Cat(String food, String loaction, boolean isWild) {
-        this.food = food;
-        this.location = loaction;
+    public Cat(String food, String location, boolean isWild) {
+        super(food, location);
         this.isWild = isWild;
     }
 
